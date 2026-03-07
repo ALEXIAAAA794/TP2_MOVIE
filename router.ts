@@ -12,7 +12,7 @@ export function createRouter() {
   router.get("/health", (req, res) => {
     res.json({ ok: true })
   })
-
+//movies/:id/screenings
   router.get("/movies", async (req, res) => {
     const items = await movies.list()
     res.json({ ok: true, items })
