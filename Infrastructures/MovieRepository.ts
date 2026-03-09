@@ -1,5 +1,5 @@
 import { db } from "./db.js"
-import { movies } from "./schema"
+import { movies } from "./schema.js"
 import { asc } from "drizzle-orm"
 import { eq } from 'drizzle-orm'
 

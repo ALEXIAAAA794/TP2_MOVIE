@@ -20,5 +20,5 @@ export const screenings = pgTable("screenings", {
   movieId: integer("movie_id").notNull(),
   roomId: integer("room_id").notNull(),
   startTime: timestamp("start_time").notNull(),
-  price: numeric("price").notNull()
+  price: numeric("price", { mode: "number" }).notNull()
 })
